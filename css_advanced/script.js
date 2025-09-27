@@ -1,0 +1,10 @@
+// FAQ toggle
+const faqItems = document.querySelectorAll(".faq-item h3");
+
+faqItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const answer = item.nextElementSibling;
+    answer.style.display =
+      answer.style.display === "block" ? "none" : "block";
+  });
+});
